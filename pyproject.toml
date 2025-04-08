@@ -1,0 +1,15 @@
+[project]
+name = "sub39"
+version = "0.1.0"
+description = "Optimized edge pipeline"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+dependencies = [
+    "torch",
+    "transformers",
+    "numpy",
+    # Add more if used in src/pipeline.py
+]
+
+[tool.edge]
+entrypoint = "src/pipeline.py"
+models = ["your-hf-model-id"]
